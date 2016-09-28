@@ -10,4 +10,6 @@ public interface MessageReader {
 
     Optional<String> read();
 
+    Optional<String> read(String... args);
+
 }

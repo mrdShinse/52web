@@ -1,5 +1,7 @@
 package mrdshinse.go2web;
 
+import mrdshinse.go2web.message.MessageReader4Console;
+
 /**
  * 実行クラス
  *
@@ -8,6 +10,6 @@ package mrdshinse.go2web;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("文言");
+        new MessageReader4Console("h001.msg").read().ifPresent(System.out::println);
     }
 }
